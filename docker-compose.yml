@@ -2,9 +2,9 @@ version: "3"
 
 services:
   web:
-    build: .
+    image: kevinkao/apache-php7-fpm
     volumes:
-      - .:/var/www/html
+      - .:/var/www/html/public
     tty: true
     depends_on:
       - db
